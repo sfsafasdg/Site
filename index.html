@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-<html lang="ru">
+<html lang="uk">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Строительные и земельные работы</title>
+<title>Вивіз сміття Київ та область</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -17,33 +17,32 @@
 }
 
 body{
-  background:#0a0f1c;
+  background:#0b1220;
   color:#e5e7eb;
 }
 
 /* HERO */
 .hero{
-  height:100vh;
+  min-height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
+  padding:40px 20px;
   background:
-    linear-gradient(to bottom, rgba(0,0,0,0.6), #0a0f1c),
-    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+    linear-gradient(to bottom, rgba(0,0,0,0.75), #0b1220),
+    url('https://images.unsplash.com/photo-1604187351574-c75ca79f5807');
   background-size:cover;
   background-position:center;
 }
 
 .hero-content{
-  max-width:800px;
-  padding:20px;
+  max-width:850px;
 }
 
 .hero h1{
-  font-size:52px;
+  font-size:46px;
   font-weight:800;
-  letter-spacing:1px;
   color:#fff;
 }
 
@@ -54,24 +53,24 @@ body{
   line-height:1.6;
 }
 
-/* BUTTONS */
+/* CTA */
 .cta{
   margin-top:30px;
   display:flex;
-  gap:12px;
   justify-content:center;
+  gap:12px;
   flex-wrap:wrap;
 }
 
 .btn{
-  padding:14px 22px;
+  padding:14px 20px;
   border:1px solid rgba(255,255,255,0.2);
   background:rgba(255,255,255,0.05);
   color:#fff;
   text-decoration:none;
+  border-radius:10px;
   font-weight:600;
   transition:0.25s;
-  border-radius:10px;
   backdrop-filter:blur(10px);
 }
 
@@ -82,65 +81,56 @@ body{
 
 /* SECTIONS */
 section{
-  padding:90px 20px;
-  max-width:1100px;
+  padding:80px 20px;
+  max-width:1000px;
   margin:auto;
 }
 
 h2{
-  font-size:30px;
-  font-weight:800;
-  margin-bottom:30px;
+  font-size:28px;
+  margin-bottom:25px;
   color:#fff;
 }
 
-/* GRID */
-.grid{
+/* LIST */
+.list{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:18px;
+  gap:12px;
 }
 
-/* CARDS */
-.card{
+.item{
   background:rgba(255,255,255,0.03);
   border:1px solid rgba(255,255,255,0.08);
-  padding:22px;
-  border-radius:14px;
-  transition:0.3s;
+  padding:16px 18px;
+  border-radius:12px;
 }
 
-.card:hover{
-  transform:translateY(-6px);
-  border-color:rgba(255,255,255,0.25);
-}
-
-/* PROCESS */
-.step{
-  background:rgba(255,255,255,0.02);
+/* BOX */
+.info{
+  margin-top:20px;
   padding:20px;
-  border-left:3px solid #ffffff;
+  border-left:3px solid #fff;
+  background:rgba(255,255,255,0.03);
   border-radius:10px;
 }
 
 /* FIXED BUTTON */
 .fixed{
   position:fixed;
-  bottom:20px;
-  right:20px;
+  bottom:18px;
+  right:18px;
   background:#fff;
   color:#000;
   padding:14px 18px;
   border-radius:50px;
-  text-decoration:none;
   font-weight:700;
-  box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  text-decoration:none;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:40px;
+  padding:30px;
   color:#6b7280;
   font-size:14px;
   border-top:1px solid rgba(255,255,255,0.05);
@@ -153,15 +143,15 @@ footer{
 
 <div class="hero">
   <div class="hero-content">
-    <h1>Земельные и строительные работы</h1>
-    <p>Уборка участков • Демонтаж • Рубка деревьев • Вывоз мусора  
-    Работаем быстро, аккуратно и с техникой по Киевской области</p>
+    <h1>Вивіз сміття Київ та область</h1>
+    <p>
+      Швидко, акуратно та без зайвих питань. Вантажники приїжджають, завантажують і одразу вивозять сміття.
+    </p>
 
 ```
 <div class="cta">
-  <a class="btn" href="https://t.me/USERNAME">Написать в Telegram</a>
-  <a class="btn" href="viber://chat?number=+380XXXXXXXXX">Viber</a>
-  <a class="btn" href="tel:+380XXXXXXXXX">Позвонить</a>
+  <a class="btn" href="https://t.me/0936031641">Telegram / Viber</a>
+  <a class="btn" href="tel:+380636329982">Подзвонити</a>
 </div>
 ```
 
@@ -169,50 +159,70 @@ footer{
 </div>
 
 <section>
-  <h2>Услуги</h2>
-  <div class="grid">
-    <div class="card">Уборка и расчистка участков</div>
-    <div class="card">Демонтаж зданий и конструкций</div>
-    <div class="card">Рубка и вывоз деревьев</div>
-    <div class="card">Вывоз строительного мусора</div>
-    <div class="card">Подготовка участка под стройку</div>
-    <div class="card">Дробление веток и отходов</div>
+  <h2>Вивозимо будь-яке сміття</h2>
+
+  <div class="list">
+    <div class="item">✔ Побутове сміття</div>
+    <div class="item">✔ Будівельне сміття</div>
+    <div class="item">✔ Старі меблі</div>
+    <div class="item">✔ Садові відходи (гілки, трава, листя)</div>
+  </div>
+
+  <div class="info">
+    🚛 З вантажниками — приїхали, завантажили, вивезли. Вам нічого робити не потрібно.
   </div>
 </section>
 
 <section>
-  <h2>Как работаем</h2>
-  <div class="grid">
-    <div class="step">1. Получаем заявку</div>
-    <div class="step">2. Выезд и оценка</div>
-    <div class="step">3. Выполнение работ техникой</div>
-    <div class="step">4. Сдача объекта</div>
+  <h2>Наш автопарк</h2>
+
+  <div class="list">
+    <div class="item">🚛 КамАЗ</div>
+    <div class="item">🚛 ЗІЛ</div>
+    <div class="item">🚛 МАЗ</div>
+    <div class="item">🚐 ГАЗель</div>
+    <div class="item">🚐 Бус</div>
   </div>
 </section>
 
 <section>
-  <h2>Почему выбирают нас</h2>
-  <div class="grid">
-    <div class="card">Своя техника</div>
-    <div class="card">Работа без задержек</div>
-    <div class="card">Честная цена</div>
-    <div class="card">Опытные рабочие</div>
+  <h2>Як працюємо</h2>
+
+  <div class="list">
+    <div class="item">1. Ви залишаєте заявку</div>
+    <div class="item">2. Приїжджаємо швидко</div>
+    <div class="item">3. Вантажимо сміття</div>
+    <div class="item">4. Вивозимо та прибираємо</div>
   </div>
 </section>
 
 <section style="text-align:center;">
-  <h2>Готовы начать?</h2>
-  <div class="cta">
-    <a class="btn" href="https://t.me/USERNAME">Telegram</a>
-    <a class="btn" href="tel:+380XXXXXXXXX">Позвонить сейчас</a>
+  <h2>Ціни</h2>
+  <div class="info">
+    💰 Від 600 грн (залежно від обсягу та типу сміття)
   </div>
 </section>
 
-<a class="fixed" href="tel:+380XXXXXXXXX">Связаться</a>
+<section style="text-align:center;">
+  <h2>Контакти</h2>
+
+  <div class="info">
+    📞 093 603 16 41<br>
+    📞 +380 63 632 99 82
+  </div>
+
+  <div class="cta">
+    <a class="btn" href="https://t.me/0936031641">Telegram / Viber</a>
+    <a class="btn" href="tel:+380636329982">Подзвонити</a>
+  </div>
+</section>
+
+<a class="fixed" href="tel:+380636329982">Замовити</a>
 
 <footer>
-© 2026 • Услуги по Киевской области
+© 2026 Вивіз сміття • Київ та область
 </footer>
 
 </body>
 </html>
+
