@@ -4,58 +4,133 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Уборка участков и демонтаж | Киевская область</title>
+<title>Услуги: уборка, демонтаж, вырубка деревьев</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: white;
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter, sans-serif;
 }
 
-.container {
-  padding: 40px 20px;
+body{
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+  color:#fff;
 }
 
-h1 {
-  font-size: 32px;
+.container{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
 }
 
-p {
-  color: #ccc;
+.hero{
+  text-align:center;
+  padding:110px 0 80px;
 }
 
-.buttons a {
-  display: inline-block;
-  margin: 10px;
-  padding: 15px 20px;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.hero h1{
+  font-size:46px;
+  font-weight:800;
+  line-height:1.2;
 }
 
-.tg { background: #229ED9; }
-.viber { background: #7360F2; }
-.call { background: #22c55e; }
-
-.section {
-  margin-top: 40px;
+.hero p{
+  margin-top:15px;
+  color:#cbd5e1;
+  font-size:18px;
 }
 
-.card {
-  background: #222;
-  margin: 10px auto;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 300px;
+.buttons{
+  margin-top:25px;
 }
 
-.footer {
-  margin-top: 50px;
-  color: #777;
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  margin:6px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.tg{background:#229ED9;}
+.viber{background:#7c3aed;}
+.call{background:#22c55e;}
+
+.btn:hover{
+  transform:translateY(-3px);
+  opacity:0.9;
+}
+
+.section{
+  padding:70px 0;
+}
+
+.title{
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:25px;
+  text-align:center;
+}
+
+.grid{
+  display:grid;
+  gap:18px;
+}
+
+.cards{
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+}
+
+.card{
+  background:rgba(255,255,255,0.06);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.08);
+  padding:22px;
+  border-radius:16px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.1);
+}
+
+.steps{
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+.step{
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:14px;
+  text-align:center;
+}
+
+.fixed{
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  background:#22c55e;
+  padding:14px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:700;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#94a3b8;
+  font-size:14px;
 }
 </style>
 
@@ -63,39 +138,53 @@ p {
 
 <body>
 
-<div class="container">
-  <h1>Уборка участков и демонтаж</h1>
-  <p>Быстро, качественно, Киевская область</p>
+<div class="hero container">
+  <h1>Уборка участков<br>и демонтаж под ключ</h1>
+  <p>Киевская область • быстро • техника • вывоз мусора</p>
 
   <div class="buttons">
-    <a href="https://t.me/USERNAME" class="tg">Написать в Telegram</a>
-    <a href="viber://chat?number=+380XXXXXXXXX" class="viber">Написать в Viber</a>
-    <a href="tel:+380XXXXXXXXX" class="call">Позвонить</a>
+    <a href="https://t.me/USERNAME" class="btn tg">Telegram</a>
+    <a href="viber://chat?number=+380XXXXXXXXX" class="btn viber">Viber</a>
+    <a href="tel:+380XXXXXXXXX" class="btn call">Позвонить</a>
   </div>
 </div>
 
-<div class="section">
-  <h2>Услуги</h2>
-
-  <div class="card">Уборка участков</div>
-  <div class="card">Демонтаж зданий</div>
-  <div class="card">Рубка деревьев</div>
-  <div class="card">Вывоз мусора</div>
-  <div class="card">Дробление веток</div>
+<div class="section container">
+  <div class="title">Наши услуги</div>
+  <div class="grid cards">
+    <div class="card">Уборка участков</div>
+    <div class="card">Демонтаж зданий</div>
+    <div class="card">Рубка деревьев</div>
+    <div class="card">Вывоз мусора</div>
+    <div class="card">Дробление веток</div>
+    <div class="card">Подготовка участка</div>
+  </div>
 </div>
 
-<div class="section">
-  <h2>Почему выбирают нас</h2>
-
-  <div class="card">Быстрый выезд</div>
-  <div class="card">Своя техника</div>
-  <div class="card">Низкие цены</div>
-  <div class="card">Работаем без выходных</div>
+<div class="section container">
+  <div class="title">Как мы работаем</div>
+  <div class="grid steps">
+    <div class="step">1. Заявка</div>
+    <div class="step">2. Выезд</div>
+    <div class="step">3. Оценка</div>
+    <div class="step">4. Выполнение</div>
+  </div>
 </div>
 
-<div class="footer">
-  © 2026 Услуги по Киеву и области
+<div class="section container">
+  <div class="title">Связь</div>
+  <div class="buttons" style="text-align:center;">
+    <a href="https://t.me/USERNAME" class="btn tg">Написать в Telegram</a>
+    <a href="viber://chat?number=+380XXXXXXXXX" class="btn viber">Viber</a>
+    <a href="tel:+380XXXXXXXXX" class="btn call">Позвонить</a>
+  </div>
 </div>
+
+<a href="tel:+380XXXXXXXXX" class="fixed">Связаться</a>
+
+<footer>
+© 2026 • Услуги по Киеву и области
+</footer>
 
 </body>
 </html>
