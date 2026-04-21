@@ -4,9 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Услуги: уборка, демонтаж, вырубка деревьев</title>
+<title>Строительные и земельные работы</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -17,120 +17,133 @@
 }
 
 body{
-  background: radial-gradient(circle at top, #1e293b, #0f172a);
-  color:#fff;
+  background:#0a0f1c;
+  color:#e5e7eb;
 }
 
-.container{
-  width:90%;
-  max-width:1100px;
-  margin:auto;
-}
-
+/* HERO */
 .hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  padding:110px 0 80px;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.6), #0a0f1c),
+    url('https://images.unsplash.com/photo-1504307651254-35680f356dfd');
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  max-width:800px;
+  padding:20px;
 }
 
 .hero h1{
-  font-size:46px;
+  font-size:52px;
   font-weight:800;
-  line-height:1.2;
+  letter-spacing:1px;
+  color:#fff;
 }
 
 .hero p{
   margin-top:15px;
-  color:#cbd5e1;
   font-size:18px;
+  color:#cbd5e1;
+  line-height:1.6;
 }
 
-.buttons{
-  margin-top:25px;
+/* BUTTONS */
+.cta{
+  margin-top:30px;
+  display:flex;
+  gap:12px;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
   padding:14px 22px;
-  margin:6px;
-  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.05);
+  color:#fff;
   text-decoration:none;
   font-weight:600;
-  transition:0.3s;
+  transition:0.25s;
+  border-radius:10px;
+  backdrop-filter:blur(10px);
 }
-
-.tg{background:#229ED9;}
-.viber{background:#7c3aed;}
-.call{background:#22c55e;}
 
 .btn:hover{
   transform:translateY(-3px);
-  opacity:0.9;
+  border-color:#fff;
 }
 
-.section{
-  padding:70px 0;
+/* SECTIONS */
+section{
+  padding:90px 20px;
+  max-width:1100px;
+  margin:auto;
 }
 
-.title{
-  font-size:28px;
+h2{
+  font-size:30px;
   font-weight:800;
-  margin-bottom:25px;
-  text-align:center;
+  margin-bottom:30px;
+  color:#fff;
 }
 
+/* GRID */
 .grid{
   display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:18px;
 }
 
-.cards{
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-}
-
+/* CARDS */
 .card{
-  background:rgba(255,255,255,0.06);
-  backdrop-filter:blur(10px);
+  background:rgba(255,255,255,0.03);
   border:1px solid rgba(255,255,255,0.08);
   padding:22px;
-  border-radius:16px;
-  text-align:center;
+  border-radius:14px;
   transition:0.3s;
 }
 
 .card:hover{
   transform:translateY(-6px);
-  background:rgba(255,255,255,0.1);
+  border-color:rgba(255,255,255,0.25);
 }
 
-.steps{
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-}
-
+/* PROCESS */
 .step{
-  background:rgba(255,255,255,0.05);
+  background:rgba(255,255,255,0.02);
   padding:20px;
-  border-radius:14px;
-  text-align:center;
+  border-left:3px solid #ffffff;
+  border-radius:10px;
 }
 
+/* FIXED BUTTON */
 .fixed{
   position:fixed;
-  bottom:18px;
-  right:18px;
-  background:#22c55e;
+  bottom:20px;
+  right:20px;
+  background:#fff;
+  color:#000;
   padding:14px 18px;
   border-radius:50px;
   text-decoration:none;
-  color:#fff;
   font-weight:700;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
+/* FOOTER */
 footer{
   text-align:center;
-  padding:30px;
-  color:#94a3b8;
+  padding:40px;
+  color:#6b7280;
   font-size:14px;
+  border-top:1px solid rgba(255,255,255,0.05);
 }
 </style>
 
@@ -138,52 +151,67 @@ footer{
 
 <body>
 
-<div class="hero container">
-  <h1>Уборка участков<br>и демонтаж под ключ</h1>
-  <p>Киевская область • быстро • техника • вывоз мусора</p>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Земельные и строительные работы</h1>
+    <p>Уборка участков • Демонтаж • Рубка деревьев • Вывоз мусора  
+    Работаем быстро, аккуратно и с техникой по Киевской области</p>
 
-  <div class="buttons">
-    <a href="https://t.me/USERNAME" class="btn tg">Telegram</a>
-    <a href="viber://chat?number=+380XXXXXXXXX" class="btn viber">Viber</a>
-    <a href="tel:+380XXXXXXXXX" class="btn call">Позвонить</a>
+```
+<div class="cta">
+  <a class="btn" href="https://t.me/USERNAME">Написать в Telegram</a>
+  <a class="btn" href="viber://chat?number=+380XXXXXXXXX">Viber</a>
+  <a class="btn" href="tel:+380XXXXXXXXX">Позвонить</a>
+</div>
+```
+
   </div>
 </div>
 
-<div class="section container">
-  <div class="title">Наши услуги</div>
-  <div class="grid cards">
-    <div class="card">Уборка участков</div>
-    <div class="card">Демонтаж зданий</div>
-    <div class="card">Рубка деревьев</div>
-    <div class="card">Вывоз мусора</div>
-    <div class="card">Дробление веток</div>
-    <div class="card">Подготовка участка</div>
+<section>
+  <h2>Услуги</h2>
+  <div class="grid">
+    <div class="card">Уборка и расчистка участков</div>
+    <div class="card">Демонтаж зданий и конструкций</div>
+    <div class="card">Рубка и вывоз деревьев</div>
+    <div class="card">Вывоз строительного мусора</div>
+    <div class="card">Подготовка участка под стройку</div>
+    <div class="card">Дробление веток и отходов</div>
   </div>
-</div>
+</section>
 
-<div class="section container">
-  <div class="title">Как мы работаем</div>
-  <div class="grid steps">
-    <div class="step">1. Заявка</div>
-    <div class="step">2. Выезд</div>
-    <div class="step">3. Оценка</div>
-    <div class="step">4. Выполнение</div>
+<section>
+  <h2>Как работаем</h2>
+  <div class="grid">
+    <div class="step">1. Получаем заявку</div>
+    <div class="step">2. Выезд и оценка</div>
+    <div class="step">3. Выполнение работ техникой</div>
+    <div class="step">4. Сдача объекта</div>
   </div>
-</div>
+</section>
 
-<div class="section container">
-  <div class="title">Связь</div>
-  <div class="buttons" style="text-align:center;">
-    <a href="https://t.me/USERNAME" class="btn tg">Написать в Telegram</a>
-    <a href="viber://chat?number=+380XXXXXXXXX" class="btn viber">Viber</a>
-    <a href="tel:+380XXXXXXXXX" class="btn call">Позвонить</a>
+<section>
+  <h2>Почему выбирают нас</h2>
+  <div class="grid">
+    <div class="card">Своя техника</div>
+    <div class="card">Работа без задержек</div>
+    <div class="card">Честная цена</div>
+    <div class="card">Опытные рабочие</div>
   </div>
-</div>
+</section>
 
-<a href="tel:+380XXXXXXXXX" class="fixed">Связаться</a>
+<section style="text-align:center;">
+  <h2>Готовы начать?</h2>
+  <div class="cta">
+    <a class="btn" href="https://t.me/USERNAME">Telegram</a>
+    <a class="btn" href="tel:+380XXXXXXXXX">Позвонить сейчас</a>
+  </div>
+</section>
+
+<a class="fixed" href="tel:+380XXXXXXXXX">Связаться</a>
 
 <footer>
-© 2026 • Услуги по Киеву и области
+© 2026 • Услуги по Киевской области
 </footer>
 
 </body>
